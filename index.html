@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeStarter KR - 코딩의 시작</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Pretendard', sans-serif;
+      }
+      /* Custom Scrollbar for better UX */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8; 
+      }
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      }
+      .text-shadow-lg {
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#eff6ff',
+                100: '#dbeafe',
+                500: '#3b82f6',
+                600: '#2563eb', 
+                700: '#1d4ed8',
+                900: '#1e3a8a',
+              },
+              action: {
+                400: '#34d399',
+                500: '#10b981', 
+                600: '#059669',
+              },
+              accent: {
+                yellow: '#fbbf24', 
+                navy: '#0f172a',
+              }
+            },
+            fontFamily: {
+              sans: ['Pretendard', 'sans-serif'],
+            },
+            borderRadius: {
+              'lg': '0.5rem',
+              'xl': '0.75rem',
+              '2xl': '1rem', // Reduced from 1.5rem
+              '3xl': '1.5rem', // Reduced from 2rem
+            },
+            boxShadow: {
+              'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+              'hover': '0 10px 25px -5px rgba(37, 99, 235, 0.1)',
+              'card': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/Web_in_0121/assets/index-BEBj2ff5.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
